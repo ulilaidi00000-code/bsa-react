@@ -15,19 +15,19 @@ function Home() {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
     </div>
-    <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-      <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-        <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-          Bismillahirrohmanirrohim. <a href="#" className="font-semibold text-indigo-600"><span aria-hidden="true" className="absolute inset-0"></span>Selengkapnya <span aria-hidden="true">&rarr;</span></a>
+    <div className="mx-auto max-w-2xl py-32 sm:py-35 lg:py-40">
+      <div className="sm:mb-8 sm:flex sm:justify-center">
+        <div className="hidden relative rounded-full px-3 py-1 text-sm/5 sm:text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+          Bismillahirrohmanirrohim <a href="#" className="font-semibold text-indigo-600"><span aria-hidden="true" className="absolute inset-0"></span>Selanjutnya <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div className="text-center">
-        <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Panti Asuhan NU</h1>
-        <h1 className="mt-4 text-3xl font-semibold tracking-tight text-balance text-gray-700 sm:text-5xl">Bintan Sa'adillah Al-Rasyid</h1>
-        <p className="mt-8 text-md font-medium text-pretty text-gray-500 sm:text-xl/8">Jl. Krapyak Wetan, b Gg. Bougenville No.127, Krapyak Wetan, Panggungharjo, Kec. Sewon, Kabupaten Bantul,<br></br> Daerah Istimewa Yogyakarta 55188</p>
+        <h1 className="mt-1 text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Panti Asuhan NU</h1>
+        <h1 className="mt-4 text-2xl font-semibold tracking-tight text-balance text-gray-700 sm:text-5xl">Bintan Sa'adillah Al-Rasyid</h1>
+        <p className="mt-8 text-sm/5 font-medium text-pretty text-gray-500 sm:text-xl/8">Jl. Krapyak Wetan, b Gg. Bougenville No.127, Krapyak Wetan, Panggungharjo, Kec. Sewon, Kabupaten Bantul,<br></br> Daerah Istimewa Yogyakarta 55188</p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#" className="mt-8 inline-block rounded-full border border-indigo-600 px-12 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:ring-3 focus:outline-hidden">Get started</a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+          <a href="#" className="rounded-full border border-indigo-600 px-8 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:ring-3 focus:outline-hidden">Hubungi kami</a>
+          <a href="#" className="text-sm/6 font-semibold font-medium text-indigo-600">Selengkapnya <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
@@ -45,11 +45,10 @@ function Home() {
         <div className="bg-black text-white py-20">
           <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
             <div className="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
-              <h1 className="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">TechFest</h1>
-              <h2 className="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">Space : The Timeless Infinity
+              <h1 className="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">Tentang kami</h1>
+              <h2 className="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">Ajaran : Ahli sunnah waljama'ah
               </h2>
-              <p className="text-sm md:text-base text-gray-50 mb-4">Explore your favourite events and
-                register now to showcase your talent and win exciting prizes.</p>
+              <p className="text-sm md:text-base text-gray-50 mb-4">Berbagai kegiatan keagamaan berbasiskan pembelajaran pesantren salaf.</p>
               <a href="#"
                 className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent">
                 Explore Now</a>
