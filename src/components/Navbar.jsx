@@ -3,92 +3,68 @@ import logo from "../media/logo.jpg"
 
 function Navbar() {
   return (
-    <header className="bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 items-center justify-between">
-            <div className="flex-1 md:flex md:items-center md:gap-12">
-                <a href="#">
-                <span className="sr-only">Home</span>
-                <img src={logo} className="block text-teal-600 size-12 rounded-full" />
-                </a>
+<div className="bg-white">
+  <header className="absolute inset-x-0 top-0 z-50">
+    <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+      <div className="flex lg:flex-1">
+        <a href="#" className="-m-1.5 p-1.5 fixed top-6">
+          <span className="sr-only">Darul Hadlonah</span>
+          <img src={logo} className="h-12 w-auto rounded-full" />
+        </a>
+      </div>
+      <div className="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 fixed right-6">
+          <span className="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" data-slot="icon" aria-hidden="true" className="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div className="hidden lg:flex lg:gap-x-12">
+        <a href="#" className="text-sm/6 font-semibold text-gray-900">Santri</a>
+        <a href="#" className="text-sm/6 font-semibold text-gray-900">Pengajar</a>
+        <a href="#" className="text-sm/6 font-semibold text-gray-900">Lembaga</a>
+        <a href="#" className="text-sm/6 font-semibold text-gray-900">Jadwal</a>
+      </div>
+      <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="#" className="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </nav>
+    <el-dialog>
+      <dialog id="mobile-menu" className="backdrop:bg-transparent lg:hidden">
+        <div tabIndex="0" className="fixed inset-0 focus:outline-none">
+          <el-dialog-panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div className="flex items-center justify-between">
+              <a href="#" className="-m-1.5 p-1.5">
+                <span className="sr-only">Darul Hadlonah</span>
+                <img src={logo} alt="" className="h-12 w-auto rounded-full" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" className="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span className="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" data-slot="icon" aria-hidden="true" className="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
             </div>
-
-            <div className="md:flex md:items-center md:gap-12">
-                <nav aria-label="Global" className="hidden md:block">
-                <ul className="flex items-center gap-6 text-sm">
-                    <li>
-                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> About </a>
-                    </li>
-
-                    <li>
-                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Careers </a>
-                    </li>
-
-                    <li>
-                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> History </a>
-                    </li>
-
-                    <li>
-                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Services </a>
-                    </li>
-
-                    <li>
-                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Projects </a>
-                    </li>
-
-                    <li>
-                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Blog </a>
-                    </li>
-                </ul>
-                </nav>
-
-                <div className="hidden md:relative md:block">
-                <button type="button" className="overflow-hidden rounded-full border border-gray-300 shadow-inner">
-                    <span className="sr-only">Toggle dashboard menu</span>
-
-                    <img src={homeSection.image} alt="" className="size-10 object-cover"/>
-                </button>
-
-                <div className="absolute end-0 z-10 mt-0.5 w-56 divide-y divide-gray-100 rounded-md border border-gray-100 bg-white shadow-lg" role="menu">
-                    <div className="p-2">
-                    <a href="#" className="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700" role="menuitem">
-                        My profile
-                    </a>
-
-                    <a href="#" className="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700" role="menuitem">
-                        Billing summary
-                    </a>
-
-                    <a href="#" className="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700" role="menuitem">
-                        Team settings
-                    </a>
-                    </div>
-
-                    <div className="p-2">
-                    <form method="POST" action="#">
-                        <button type="submit" className="flex w-full items-center gap-2 rounded-lg px-4 py-2 text-sm text-red-700 hover:bg-red-50" role="menuitem">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-4">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"></path>
-                        </svg>
-
-                        Logout
-                        </button>
-                    </form>
-                    </div>
+            <div className="mt-6 flow-root">
+              <div className="-my-6 divide-y divide-gray-500/10">
+                <div className="space-y-2 py-6">
+                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Santri</a>
+                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Pengajar</a>
+                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Lembaga</a>
+                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Jadwal</a>
                 </div>
+                <div className="py-6">
+                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
                 </div>
-
-                <div className="block md:hidden">
-                <button className="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-                </div>
+              </div>
             </div>
-            </div>
+          </el-dialog-panel>
         </div>
-    </header>
+      </dialog>
+    </el-dialog>
+  </header>
+</div>
   )
 }
 
