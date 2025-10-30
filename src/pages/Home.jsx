@@ -15,9 +15,9 @@ function Home() {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
     </div>
-    <div className="mx-auto max-w-2xl py-32 sm:py-35 lg:py-40">
-      <div className="sm:mb-8 sm:flex sm:justify-center">
-        <div className="hidden relative rounded-full px-3 py-1 text-sm/5 sm:text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+    <div className="mx-auto max-w-2xl py-32 sm:py-40 lg:py-40">
+      <div className="mb-8 flex justify-center">
+        <div className="relative sm:text-sm/5 rounded-full px-3 py-1 text-sm/5 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
           Bismillahirrohmanirrohim <a href="#" className="font-semibold text-indigo-600"><span aria-hidden="true" className="absolute inset-0"></span>Selanjutnya <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
