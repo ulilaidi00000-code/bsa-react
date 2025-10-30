@@ -26,7 +26,7 @@ function Home() {
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-balance text-gray-700 sm:text-5xl">Bintan Sa'adillah Al-Rasyid</h1>
         <p className="mt-8 text-md font-medium text-pretty text-gray-500 sm:text-xl/8">Jl. Krapyak Wetan, b Gg. Bougenville No.127, Krapyak Wetan, Panggungharjo, Kec. Sewon, Kabupaten Bantul,<br></br> Daerah Istimewa Yogyakarta 55188</p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+          <a href="#" className="mt-8 inline-block rounded-full border border-indigo-600 px-12 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:ring-3 focus:outline-hidden">Get started</a>
           <a href="#" className="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a>
         </div>
       </div>
